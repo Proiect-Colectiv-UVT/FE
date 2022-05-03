@@ -1,0 +1,21 @@
+.pollTemplate{
+    font-size:32px;
+    text-align: center;
+
+}
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    font-size:32px;
+    text-align: center;
+}
+.centerTab {
+  margin: auto;
+    padding: 10px;
+    font-size:32px;
+}
+body{
+  background-color: #1C1C1C;
+}
+  

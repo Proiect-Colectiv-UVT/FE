@@ -1,0 +1,17 @@
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    background-color: #373737;
+  }
+.textCreatePoll{
+    font-size: 64px;
+    font-family: Helvetica (sans-serif);
+    color:#1C1C1C;
+}
+.textCreatePoll2{
+    font-size: 32px;
+    font-family: Helvetica (sans-serif);
+    color:#1C1C1C;
+}

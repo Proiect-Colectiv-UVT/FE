@@ -1,0 +1,17 @@
+<navbar></navbar>
+<br>
+<div class="center">
+    <p class="textCreatePoll">Create a poll</p>
+    <p class="textCreatePoll2">Poll title</p><br>
+    <form (ngSubmit)="onSubmit()">
+    <input type="text" id="title" [(ngModel)] = "poll.title" name="title"> <br><br><br>
+
+    <p class="textCreatePoll2">Poll description</p><br>
+    <input type="text" id="description" [(ngModel)] = "poll.description" name="description"> <br><br><br>
+    <p class="textCreatePoll2">Expiry date</p><br><br>
+    <p-calendar [(ngModel)]= "date"></p-calendar>
+    <br><br><br><br>
+    <button [ngStyle]="{backgroundColor:'var(--blue-500)'}" pButton type="submit" label="Create" ></button>
+    <button (click)="cancel()" [ngStyle]="{backgroundColor:'var(--red-500)'}" pButton type="button" label="Cancel" ></button>
+</form>
+</div>

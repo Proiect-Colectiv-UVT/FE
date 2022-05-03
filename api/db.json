@@ -1,0 +1,75 @@
+{
+  "polls": [
+    {
+      "id": 1,
+      "title": "Do you like food?",
+      "description": "This is a poll where we want to see how much you like food",
+      "date": "12/12/2020",
+      "grade": "8"
+    },
+    {
+      "id": 2,
+      "title": "Do you sleep bad?",
+      "description": "This is a poll for helping other people",
+      "date": "12/03/2022",
+      "grade": "2"
+    },
+    {
+      "title": "asf",
+      "description": "saf",
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "title": "Yesterday's presentation",
+      "description": "How much did you enjoy yesterday's presentation?",
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "title": "This week",
+      "description": "General thoughts about this week",
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "title": "General things",
+      "description": "No description",
+      "id": 13
+    },
+    {
+      "title": "Test test test test test test test test",
+      "description": "Test test test test test test test test",
+      "id": 14
+    },
+    {
+      "title": "sffsfafsfassssssssssfasfasfafsafafsafa",
+      "description": "sffffffffsaaaaaaaaafsafsafsafsa",
+      "id": 15
+    },
+    {
+      "id": 16
+    },
+    {
+      "id": 17
+    }
+  ]
+}
