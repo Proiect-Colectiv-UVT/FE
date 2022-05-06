@@ -7,18 +7,19 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PollService {
 
-  private baseURL = "http://localhost:3000/polls";
-
+  private baseURL = "http://localhost:8080/polls";
+  private voteURL = "http://localhost:8080/poll";
+  private userURL!: string;
   constructor( private http : HttpClient) { }
 
   createPoll(poll:Poll) : Observable<Object>{
-    return this.http.post(`${this.baseURL}`, poll);
+    this.userURL="http://localhost:8080/user/"+"1"+"/poll/add";
+    return this.http.put(`${this.userURL}`, poll);
   }
   getPoll() : Observable<Poll[]>{
     return this.http.get<Poll[]>(`${this.baseURL}`);
   }
   getPollById(id:number): Observable<Poll>{
-    return this.http.get<Poll>(`${this.baseURL}/${id}`);
-
+    return this.http.get<Poll>(`${this.voteURL}/${id}`);
   }
 }

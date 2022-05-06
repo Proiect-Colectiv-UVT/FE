@@ -13,7 +13,7 @@ import { PollService } from '../poll-service.service';
 })
 export class CreatePollComponent implements OnInit {
   poll:Poll = new Poll();
-  date!: Date;
+
   constructor(private servicePoll : PollService, private router : Router ) { }
   ngOnInit(): void {
 

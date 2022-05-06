@@ -9,9 +9,10 @@
     <p class="textCreatePoll2">Poll description</p><br>
     <input type="text" id="description" [(ngModel)] = "poll.description" name="description"> <br><br><br>
     <p class="textCreatePoll2">Expiry date</p><br><br>
-    <p-calendar [(ngModel)]= "date"></p-calendar>
-    <br><br><br><br>
+    <input type="text" id="date" [(ngModel)] = "poll.expiryDate" name="description"> <br><br><br>
     <button [ngStyle]="{backgroundColor:'var(--blue-500)'}" pButton type="submit" label="Create" ></button>
     <button (click)="cancel()" [ngStyle]="{backgroundColor:'var(--red-500)'}" pButton type="button" label="Cancel" ></button>
 </form>
+<br>
 </div>
+<br><br>

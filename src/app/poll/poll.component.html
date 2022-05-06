@@ -7,9 +7,9 @@
             <table>
                 <tr>        
                     <td>
-                        <div  style="font-size:16px;float:right;margin:15px 5px 0 0">{{poll.id}} - Title: {{poll.title}} <br> Description: {{poll.description}} <br> Expiry date: {{poll.date}}</div>
+                        <div  style="font-size:16px;float:right;margin:15px 5px 0 0">{{poll.id}} - Title: {{poll.title}} <br> Description: {{poll.description}} <br> Expiry date: {{poll.expiryDate}}</div>
                     </td>
-                    <td >
+                    <td>
                         <div class="center">
                             <button [ngStyle]="{backgroundColor:'var(--blue-500)'}" pButton type="button" label="Vote"><a [routerLink]="['/votepoll', poll.id]"></a></button>
                         </div>
