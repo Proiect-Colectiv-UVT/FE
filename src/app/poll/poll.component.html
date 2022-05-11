@@ -1,6 +1,5 @@
 <navbar></navbar>
 <div class="center">
-
 <p-orderList [value]="polls" filterBy="title,description,id">
     <ng-template let-poll pTemplate="item">
         <div class="center">
@@ -11,7 +10,7 @@
                     </td>
                     <td>
                         <div class="center">
-                            <button [ngStyle]="{backgroundColor:'var(--blue-500)'}" pButton type="button" label="Vote"><a [routerLink]="['/votepoll', poll.id]"></a></button>
+                            <button (click)="votePoll(poll.id)" [ngStyle]="{backgroundColor:'var(--blue-500)'}" pButton type="button" label="Vote"></button>
                         </div>
                     </td>   
                 </tr>

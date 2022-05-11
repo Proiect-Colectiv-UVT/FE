@@ -1,5 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { PrimeNGConfig } from 'primeng/api';
+import { AuthService } from './authentication.service';
+import { TokenStorageService } from './token-storage.service';
+import { User } from './user';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,11 +11,14 @@ import { PrimeNGConfig } from 'primeng/api';
 })
 
 export class AppComponent implements OnInit {
-  constructor(private primengConfig: PrimeNGConfig) {}
-
-  ngOnInit() {
-      this.primengConfig.ripple = true;
+ user!: User;
+  constructor(public authService: AuthService) { }
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
-  title = 'my-app';
-
+ 
+   
+  logout(){
+    this.authService.doLogout();
+  }
 }

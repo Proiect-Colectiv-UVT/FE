@@ -1,0 +1,16 @@
+<div class="center">
+    <form class="form-signin" [formGroup]="signinForm" (ngSubmit)="loginUser()">
+      <p class="textCreatePoll">Please sign in</p><br>
+      <div class="form-group">
+        <label class="textCreatePoll2">Name</label><br><br>
+        <input
+          type="name"
+          class="form-control"
+          formControlName="name"
+          placeholder="Enter name"
+          required
+        /><br><br><br>
+      </div>
+      <button [ngStyle]="{backgroundColor:'var(--blue-500)'}" pButton type="submit" label="Login" ></button>
+    </form>
+  </div>
