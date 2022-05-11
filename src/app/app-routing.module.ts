@@ -11,13 +11,13 @@ import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AuthGuard } from './auth.guard';
 const routes: Routes = [
-  { path: 'createpoll', component: CreatePollComponent },
-  { path: 'votepoll/:id', component: VotePollComponent },
-  { path: 'home',  component: PollComponent },
+  { path: 'createpoll', component: CreatePollComponent,  canActivate : [AuthGuard] },
+  { path: 'votepoll/:id', component: VotePollComponent,  canActivate : [AuthGuard] },
+  { path: 'home',  component: PollComponent,  canActivate : [AuthGuard] },
   { path: 'login',  component: LoginComponent },
   { path: 'register',  component: RegisterComponent },
   { path: 'profile/:id',  component: ProfileComponent , canActivate: [AuthGuard]},
-  { path: '', redirectTo: 'home', pathMatch : 'full'},
+  { path: '', redirectTo: 'login', pathMatch : 'full', },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

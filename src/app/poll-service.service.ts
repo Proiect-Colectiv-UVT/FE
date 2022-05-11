@@ -13,7 +13,8 @@ export class PollService {
   constructor( private http : HttpClient) { }
 
   createPoll(poll:Poll) : Observable<Object>{
-    this.userURL="http://localhost:8080/user/"+"1"+"/poll/add";
+    
+    this.userURL="http://localhost:8080/user/"+sessionStorage.getItem('id')+"/poll/add";
     return this.http.put(`${this.userURL}`, poll);
   }
   getPoll() : Observable<Poll[]>{
