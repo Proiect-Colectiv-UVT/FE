@@ -1,3 +1,12 @@
 <navbar></navbar>
-Title: {{poll.title}}
-<p-slider [(ngModel)]="val"></p-slider>
+<div class="center">
+    <p class="textCreatePoll2">Please submit your answer!</p>
+    <p class="textCreatePoll"> Title: {{poll.title}} <br><br></p>
+    <p class="textCreatePoll">Description: {{poll.description}}</p><br><br>
+    <form (ngSubmit)="onSubmit()">
+        <p class="textCreatePoll">Rating:<br>
+        <p-rating [(ngModel)] = "val" name="val"></p-rating><br><br>
+        <button [ngStyle]="{backgroundColor:'var(--blue-500)'}" pButton type="submit" label="Vote" ></button>
+        <button (click)="cancel()" [ngStyle]="{backgroundColor:'var(--red-500)'}" pButton type="button" label="Cancel" ></button>
+    </form>
+</div>

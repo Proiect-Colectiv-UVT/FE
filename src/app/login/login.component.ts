@@ -33,6 +33,9 @@ export class LoginComponent implements OnInit {
     });
   }
   ngOnInit() {}
+  goToRegister(){
+    this.router.navigate(['/register']);
+  }
   loginUser() {
     
     this.authService.signIn(this.signinForm.value).subscribe(()=>{

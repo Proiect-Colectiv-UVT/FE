@@ -1,20 +1,20 @@
-<div class="auth-wrapper">
+<div class="center">
     <form
       class="form-signin"
       [formGroup]="signupForm"
       (ngSubmit)="registerUser()"
     >
-      <h3 class="h3 mb-3 font-weight-normal text-center">Please sign up</h3>
+    <p class="textCreatePoll">Please sign up</p><br>
       <div class="form-group">
-        <label>Name</label>
+        <label class="textCreatePoll2">Name</label><br><br>
         <input
           type="text"
           class="form-control"
           formControlName="name"
           placeholder="Enter name"
           required
-        />
+        /><br><br><br>
       </div>
-      <button type="submit" class="btn btn-block btn-primary">Sign up</button>
+      <button pButton type="submit" label="Register" [ngStyle]="{backgroundColor:'var(--blue-500)'}"></button>
     </form>
   </div>

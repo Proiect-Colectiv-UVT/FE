@@ -25,6 +25,10 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AuthInterceptor } from './auth-interceptor';
 import { AuthGuard } from './auth.guard';
+import {RatingModule} from 'primeng/rating';
+import { ChartModule } from 'primeng/chart';
+import { BarChartDemoComponent } from './bar-chart-demo/bar-chart-demo.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +56,9 @@ import { AuthGuard } from './auth.guard';
     SliderModule,
     CalendarModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    RatingModule,
+    ChartModule
   ],
   providers: [
     {
