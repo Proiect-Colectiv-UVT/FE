@@ -58,7 +58,8 @@ import { BarChartDemoComponent } from './bar-chart-demo/bar-chart-demo.component
     ReactiveFormsModule,
     FormsModule,
     RatingModule,
-    ChartModule
+    ChartModule,
+    
   ],
   providers: [
     {

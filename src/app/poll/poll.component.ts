@@ -50,5 +50,7 @@ export class PollComponent implements OnInit {
     console.log(id);
     this.route.navigate(['votepoll', id]);
   }
-
+  createPoll(id:number) {   
+    this.route.navigate(['/createpoll',id]);  
+  }
 }

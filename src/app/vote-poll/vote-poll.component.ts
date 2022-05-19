@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { NumberValueAccessor } from '@angular/forms';
-import { ActivatedRoute, Route } from '@angular/router';
+import { ActivatedRoute, Route, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Poll } from '../poll';
 import { PollService } from '../poll-service.service';
@@ -18,7 +18,7 @@ export class VotePollComponent implements OnInit {
   pollID!:number;
   private voteURL="http://localhost:8080/user/{idUser}/poll/{idPoll}/result/add";
   poll : Poll = new Poll();
-  constructor(private route : ActivatedRoute, private service : PollService, private http:HttpClient) { }
+  constructor(private route : ActivatedRoute, private service : PollService, private http:HttpClient, private router:Router) { }
   result:Result=new Result();
   ngOnInit(): void {
     this.id=this.route.snapshot.params['id'];
@@ -31,10 +31,12 @@ export class VotePollComponent implements OnInit {
     this.id=this.route.snapshot.params['id'];
     this.result.rating=this.val;
     this.result.comment="";
-    this.service.votePoll(this.id,this.result);
-    
+    this.service.votePoll(this.id,this.result).subscribe(data => {
+      console.log(data);
+    });
+    this.router.navigate(['/home']);
   }
   cancel(){
-
+    this.router.navigate(['/home']);
   }
 }

@@ -6,7 +6,7 @@
     <form (ngSubmit)="onSubmit()">
         <p class="textCreatePoll">Rating:<br>
         <p-rating [(ngModel)] = "val" name="val"></p-rating><br><br>
-        <button [ngStyle]="{backgroundColor:'var(--blue-500)'}" pButton type="submit" label="Vote" ></button>
-        <button (click)="cancel()" [ngStyle]="{backgroundColor:'var(--red-500)'}" pButton type="button" label="Cancel" ></button>
+        <button class="p-button-primary"  pButton type="submit" label="Vote" ></button>
+        <button (click)="cancel()" class="p-button-danger" pButton type="button" label="Cancel" ></button>
     </form>
 </div>

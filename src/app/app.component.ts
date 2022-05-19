@@ -12,9 +12,10 @@ import { User } from './user';
 
 export class AppComponent implements OnInit {
  user!: User;
+  title: any;
   constructor(public authService: AuthService) { }
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    
   }
  
    

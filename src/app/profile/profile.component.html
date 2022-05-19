@@ -1,12 +1,2 @@
 <navbar></navbar>
-<div class="container" *ngIf="currentUser; else loggedOut">
-  <header class="jumbotron">
-    <h3>
-      <strong>{{ currentUser }}</strong> Profile
-    </h3>
-  </header>
-  
-</div>
-<ng-template #loggedOut>
-  Please login.
-</ng-template>
+{{user.name}}

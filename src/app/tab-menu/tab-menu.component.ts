@@ -3,12 +3,13 @@ import { MenuItem } from "primeng/api";
 
 @Component({
   selector: 'navbar',
-  template: `<p-tabMenu [model]="items"  > </p-tabMenu>`,
+  template: `<p-tabMenu [model]="items"  > <button>click</button></p-tabMenu>`,
   styleUrls: ['./tab-menu.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
 export class TabMenuComponent implements OnInit {
   public items!: MenuItem[];
+  //Behaviour subject
   
   constructor() { }
   ngOnInit(): void {
