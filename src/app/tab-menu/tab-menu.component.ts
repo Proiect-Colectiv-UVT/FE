@@ -13,11 +13,12 @@ export class TabMenuComponent implements OnInit {
   
   constructor() { }
   ngOnInit(): void {
+    const id=sessionStorage.getItem('id');
     this.items = [
       {label: 'Home', icon: 'pi pi-fw pi-home', routerLink: ['/home']},
       {label: 'Create poll', icon: 'pi pi-plus', routerLink: ['/createpoll']},
       {label: 'View results', icon: 'pi pi-chart-bar'},
-      {label: 'Settings', icon: 'pi pi-fw pi-cog', routerLink:['/profile/:id']}
+      {label: 'Settings', icon: 'pi pi-fw pi-cog', routerLink:['/profile/' ,id]}
   ];
   }
 

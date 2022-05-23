@@ -9,7 +9,7 @@ import { Result } from './result';
 })
 export class PollService {
 
-  private baseURL = "http://localhost:8080/polls";
+  private baseURL = "http://localhost:8080/activePolls";
   private voteURL = "http://localhost:8080/poll";
   private userURL!: string;
   private vote2URL!:string;

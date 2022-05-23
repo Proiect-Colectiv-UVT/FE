@@ -41,11 +41,6 @@ export class PollComponent implements OnInit {
     });
     
   }
-  logout() {  
-    console.log('logout');  
-    this.authService.logout();  
-    this.route.navigate(['/login']);  
-  } 
   votePoll(id:number){
     console.log(id);
     this.route.navigate(['votepoll', id]);
