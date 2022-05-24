@@ -39,6 +39,7 @@ import { BarChartDemoComponent } from './bar-chart-demo/bar-chart-demo.component
     RegisterComponent,
     LoginComponent,
     ProfileComponent,
+    BarChartDemoComponent
   ],
   imports: [
     BrowserModule,

@@ -33,7 +33,7 @@ export class PollComponent implements OnInit {
   polls!:Poll[];
   constructor(private service : PollService, private primeNGConfig : PrimeNGConfig, private route : Router,private userService: UserServiceService, private authService:AuthService) { } //declaring PollService type of variable for accesing the getPoll() method which will return available polls via get method
   ngOnInit(): void {  //on component's initialisation it will create a list of polls from the API 
-   console.log(sessionStorage.getItem('id'));
+    console.log(sessionStorage.getItem('id'));
     
     this.primeNGConfig.ripple=true;
     this.service.getPoll().subscribe(data=>{

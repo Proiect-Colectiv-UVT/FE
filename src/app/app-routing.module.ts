@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AuthGuard } from './auth.guard';
+import { BarChartDemoComponent } from './bar-chart-demo/bar-chart-demo.component';
 const routes: Routes = [
   { path: 'createpoll', component: CreatePollComponent,  canActivate : [AuthGuard] },
   { path: 'votepoll/:id', component: VotePollComponent,  canActivate : [AuthGuard] },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'login',  component: LoginComponent },
   { path: 'register',  component: RegisterComponent },
   { path: 'profile/:id',  component: ProfileComponent , canActivate: [AuthGuard]},
+  { path: 'results',  component: BarChartDemoComponent, canActivate:[AuthGuard] },
   { path: '', redirectTo: 'login', pathMatch : 'full', },
 ];
 @NgModule({
