@@ -1,2 +1,6 @@
 <navbar></navbar>
-<p-chart *ngFor="let poll of polls" type="pie" [data]="data" [options]="chartOptions"  [style]="{'width': '10%'}"></p-chart> 
+<div *ngIf = "(polls$ | async) != null">
+	
+
+	<p-chart *ngFor="let poll of (polls$ | async)" type="pie" [data]="getDataForPoll(poll)" [style]="{'width': '40%'}"></p-chart>
+</div> 

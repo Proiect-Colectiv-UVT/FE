@@ -1,3 +1,24 @@
+# Viewing active polls
+![View](https://imgur.com/a/8bXhIXu)
+https://imgur.com/a/8bXhIXu
+
+# Voting section
+![Vote](https://imgur.com/a/fKdbVwY)
+https://imgur.com/a/fKdbVwY
+
+# Creating a poll and viewing it in the poll list
+![Create](https://imgur.com/a/B5R2qnD)
+Create https://imgur.com/a/B5R2qnD
+![View](https://imgur.com/a/rMd8IXR)
+View created poll https://imgur.com/a/rMd8IXR
+
+# View results section
+![Results](https://imgur.com/a/GccWSQS)
+https://imgur.com/a/GccWSQS
+
+# Login page
+https://imgur.com/a/Ltwb5gM
+
 # MyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.

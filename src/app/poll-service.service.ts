@@ -13,6 +13,7 @@ export class PollService {
   private voteURL = "http://localhost:8080/poll";
   private userURL!: string;
   private vote2URL!:string;
+  polls:Poll[]=[];
   constructor( private http : HttpClient, private router:Router) { }
 
   createPoll(poll:Poll) : Observable<Object>{
@@ -20,6 +21,7 @@ export class PollService {
     this.userURL="http://localhost:8080/user/"+sessionStorage.getItem('id')+"/poll/add";
     return this.http.put(`${this.userURL}`, poll);
   }
+  
   votePoll(pollID:number,result:Result):Observable<Object>{
     console.log("http://localhost:8080/user/"+sessionStorage.getItem('id')+"/poll/"+pollID+"/result/add", result);
     this.vote2URL="http://localhost:8080/user/"+sessionStorage.getItem('id')+"/poll/"+pollID+"/result/add";
@@ -29,6 +31,7 @@ export class PollService {
   getPoll() : Observable<Poll[]>{
     return this.http.get<Poll[]>(`${this.baseURL}`);
   }
+  
   getPollById(id:number): Observable<Poll>{
     return this.http.get<Poll>(`${this.voteURL}/${id}`);
   }
