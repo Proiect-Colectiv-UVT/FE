@@ -1,6 +1,5 @@
 # Viewing active polls
 ![View](https://imgur.com/a/8bXhIXu)
-https://imgur.com/a/8bXhIXu
 
 # Voting section
 ![Vote](https://imgur.com/a/fKdbVwY)
